@@ -9,7 +9,7 @@ if (response != "me") {
 	document.body.style.display = "block";
 }
 console.log(time);
-url = 'http://dl.dropboxusercontent.com/s/jdw9qo5783qpimd/server.json?dl=0&t=' + time;
+url = 'https://dl.dropboxusercontent.com/s/jdw9qo5783qpimd/server.json?dl=0&t=' + time;
 fetch(url)
 	.then(response => response.json())
 	.then(data => printProxy(data));
